@@ -1,12 +1,12 @@
-import Autoparts from './Autoparts.js';
+import Autoparts from './Autoparts';
 
-export default class Cosmetic extends Autoparts {
+export default class CosmeticPart extends Autoparts {
 
   constructor(color, material, controls, cost, size, maker) {
     super(cost, size, maker);
     this.partColor = color;
     this.partMaterial = material;
-    this.hasControls = controls;
+    this.controlNumber = controls;
   }
 
   get color() {
@@ -14,7 +14,7 @@ export default class Cosmetic extends Autoparts {
   }
 
   set color(color) {
-    this.color = color;
+    this.partColor = color;
   }
 
   get material() {
@@ -25,11 +25,11 @@ export default class Cosmetic extends Autoparts {
     this.partMaterial = material;
   }
 
-  get hasControls() {
-    return this.hasControls;
+  get controls() {
+    return this.controlNumber;
   }
 
-  set hasControls(controls) {
-    this.hasControls = controls;
+  set controls(controls) {
+    this.controlNumber = controls;
   }
 }

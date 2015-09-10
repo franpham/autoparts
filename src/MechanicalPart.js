@@ -1,35 +1,35 @@
 import Autoparts from './Autoparts.js';
 
-export default class Mechanical extends Autoparts {
+export default class MechanicalPart extends Autoparts {
 
-  constructor(isElectric, isMechanic, containFluid, cost, size, maker) {
+  constructor(isElectric, isMechanic, hasFluid, cost, size, maker) {
     super(cost, size, maker);
     this.isElectrical = isElectric;
     this.isMechanical = isMechanic;
-    this.hasFluid = containFluid;
+    this.fluid = hasFluid;
   }
 
-  get isElectrical() {
+  get electrical() {
     return this.isElectrical;
   }
 
-  set isElectrical(isElectric) {
+  set electrical(isElectric) {
     this.isElectrical = isElectric;
   }
 
-  get isMechanical() {
+  get mechanical() {
     return this.isMechanical;
   }
 
-  set isMechanical(isMechanic) {
+  set mechanical(isMechanic) {
     this.isMechanical = isMechanic;
   }
 
   get hasFluid() {
-    return this.hasFluid;
+    return this.fluid;
   }
 
-  set hasFluid(containFluid) {
-    this.hasFluid = containFluid;
+  set hasFluid(hasFluid) {
+    this.fluid = hasFluid;
   }
 }

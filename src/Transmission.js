@@ -4,32 +4,32 @@ export default class Transmission extends MechanicalPart {
 
   constructor(axleNum, linkage, drivetrain, isElectric, cost, size, maker) {
     super(isElectric, true, true, cost, size, maker);
-    this.axles = axleNum;
-    this.linkType = linkage;
-    this.driveType = drivetrain;
+    this._axles = axleNum;
+    this._linkType = linkage;
+    this._driveType = drivetrain;
   }
 
   get axles() {
-    return this.axles;
+    return this._axles;
   }
 
   set axles(axleNum) {
-    this.axles = axleNum;
+    this._axles = axleNum;
   }
 
   get linkType() {
-    return this.linkType;
+    return this._linkType;
   }
 
   set linkType(linkage) {
-    this.linkType = linkage;
+    this._linkType = linkage;
   }
 
   get driveType() {
-    return this.driveType;
+    return this._driveType;
   }
 
   set driveType(drivetrain) {
-    this.driveType = drivetrain;
+    this._driveType = drivetrain;
   }
 }

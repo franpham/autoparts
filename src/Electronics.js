@@ -1,6 +1,6 @@
-import Mechanical from './Mechanical.js';
+import MechanicalPart from './MechanicalPart.js';
 
-export default class Electronics extends Mechanical {
+export default class Electronics extends MechanicalPart {
 
   constructor(processor, voltage, amps, isMechanic, cost, size, maker) {
     super(true, isMechanic, false, cost, size, maker);
@@ -17,19 +17,19 @@ export default class Electronics extends Mechanical {
     this.partProcessor = processor;
   }
 
-  get voltageAmount() {
+  get voltage() {
     return this.voltageAmount;
   }
 
-  set voltageAmount(voltage) {
+  set voltage(voltage) {
     this.voltageAmount = voltage;
   }
 
-  get ampsAmount() {
+  get amps() {
     return this.ampsAmount;
   }
 
-  set ampsAmount(amps) {
+  set amps(amps) {
     this.ampsAmount = amps;
   }
 }

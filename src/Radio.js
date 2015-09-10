@@ -4,32 +4,32 @@ export default class Radio extends CosmeticPart {
 
   constructor(cdplayer, bluetooth, color, material, controls, cost, size) {
     super(color, material, controls, cost, size, 'Bose');
-    this.hasCD = cdplayer;
-    this.hasBluetooth = bluetooth;
-    this.speakers = 4;
+    this._hasCD = cdplayer;
+    this._hasBluetooth = bluetooth;
+    this._speakers = 4;
   }
 
   get hasCD() {
-    return this.hasCD;
+    return this._hasCD;
   }
 
   set hasCD(cdplayer) {
-    this.hasCD = cdplayer;
+    this._hasCD = cdplayer;
   }
 
   get hasBluetooth() {
-    return this.hasBluetooth;
+    return this._hasBluetooth;
   }
 
   set hasBluetooth(bluetooth) {
-    this.hasBluetooth = bluetooth;
+    this._hasBluetooth = bluetooth;
   }
 
   get speakers() {
-    return this.speakers;
+    return this._speakers;
   }
 
   set speakers(speakerNum) {
-    this.speakers = speakerNum;
+    this._speakers = speakerNum;
   }
 }
